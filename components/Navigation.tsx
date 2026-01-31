@@ -9,7 +9,7 @@ export default function Navigation() {
             href="/"
             className="text-xl font-bold text-gray-900 dark:text-white"
           >
-            Your Name
+            Philip John G. Calape
           </Link>
           <div className="hidden md:flex space-x-8">
             <Link

@@ -3,27 +3,27 @@ import Footer from "../../components/Footer";
 
 export default function Contact() {
   return (
-    <div className="min-h-screen bg-gray-900">
+    <div className="min-h-screen bg-gray-900 flex flex-col">
       <Navigation />
 
       {/* Contact Section */}
-      <section className="pt-24 pb-16 bg-gray-800">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h1 className="text-3xl md:text-4xl font-bold text-white mb-4">
+      <section className="flex-1 pt-20 sm:pt-24 pb-8 sm:pb-16 bg-gray-800 flex items-center">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+          <div className="text-center mb-8 sm:mb-12">
+            <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-4">
               Get In Touch
             </h1>
-            <p className="text-lg text-gray-300 max-w-2xl mx-auto">
+            <p className="text-base sm:text-lg text-gray-300 max-w-2xl mx-auto">
               I&apos;m always interested in new opportunities and exciting
               projects. Let&apos;s connect!
             </p>
           </div>
           <div className="max-w-2xl mx-auto">
-            <div className="grid md:grid-cols-2 gap-8 mb-8">
+            <div className="grid sm:grid-cols-2 gap-6 sm:gap-8 mb-6 sm:mb-8">
               <div className="text-center">
-                <div className="bg-blue-900 w-12 h-12 rounded-lg flex items-center justify-center mx-auto mb-4">
+                <div className="bg-blue-900 w-10 h-10 sm:w-12 sm:h-12 rounded-lg flex items-center justify-center mx-auto mb-3 sm:mb-4">
                   <svg
-                    className="w-6 h-6 text-blue-400"
+                    className="w-5 h-5 sm:w-6 sm:h-6 text-blue-400"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -36,13 +36,17 @@ export default function Contact() {
                     />
                   </svg>
                 </div>
-                <h3 className="text-lg font-semibold text-white mb-2">Email</h3>
-                <p className="text-gray-300">your.email@example.com</p>
+                <h3 className="text-base sm:text-lg font-semibold text-white mb-2">
+                  Email
+                </h3>
+                <p className="text-sm sm:text-base text-gray-300 break-all">
+                  your.email@example.com
+                </p>
               </div>
               <div className="text-center">
-                <div className="bg-blue-900 w-12 h-12 rounded-lg flex items-center justify-center mx-auto mb-4">
+                <div className="bg-blue-900 w-10 h-10 sm:w-12 sm:h-12 rounded-lg flex items-center justify-center mx-auto mb-3 sm:mb-4">
                   <svg
-                    className="w-6 h-6 text-blue-400"
+                    className="w-5 h-5 sm:w-6 sm:h-6 text-blue-400"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -61,20 +65,22 @@ export default function Contact() {
                     />
                   </svg>
                 </div>
-                <h3 className="text-lg font-semibold text-white mb-2">
+                <h3 className="text-base sm:text-lg font-semibold text-white mb-2">
                   Location
                 </h3>
-                <p className="text-gray-300">Your City, Country</p>
+                <p className="text-sm sm:text-base text-gray-300">
+                  Your City, Country
+                </p>
               </div>
             </div>
-            <div className="flex justify-center gap-6">
+            <div className="flex justify-center gap-4 sm:gap-6">
               <a
                 href="#"
-                className="bg-gray-700 hover:bg-gray-800 text-white p-3 rounded-full transition-colors"
+                className="bg-gray-700 hover:bg-gray-800 text-white p-2 sm:p-3 rounded-full transition-colors"
                 aria-label="LinkedIn"
               >
                 <svg
-                  className="w-5 h-5"
+                  className="w-4 h-4 sm:w-5 sm:h-5"
                   fill="currentColor"
                   viewBox="0 0 20 20"
                 >
@@ -87,11 +93,11 @@ export default function Contact() {
               </a>
               <a
                 href="#"
-                className="bg-gray-700 hover:bg-gray-800 text-white p-3 rounded-full transition-colors"
+                className="bg-gray-700 hover:bg-gray-800 text-white p-2 sm:p-3 rounded-full transition-colors"
                 aria-label="GitHub"
               >
                 <svg
-                  className="w-5 h-5"
+                  className="w-4 h-4 sm:w-5 sm:h-5"
                   fill="currentColor"
                   viewBox="0 0 20 20"
                 >
@@ -104,11 +110,11 @@ export default function Contact() {
               </a>
               <a
                 href="#"
-                className="bg-gray-700 hover:bg-gray-800 text-white p-3 rounded-full transition-colors"
+                className="bg-gray-700 hover:bg-gray-800 text-white p-2 sm:p-3 rounded-full transition-colors"
                 aria-label="Twitter"
               >
                 <svg
-                  className="w-5 h-5"
+                  className="w-4 h-4 sm:w-5 sm:h-5"
                   fill="currentColor"
                   viewBox="0 0 20 20"
                 >

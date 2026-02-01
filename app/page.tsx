@@ -5,11 +5,11 @@ import Footer from "../components/Footer";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-white dark:bg-gray-900">
+    <div className="min-h-screen bg-gray-900">
       <Navigation />
       <section
         id="home"
-        className="pt-20 pb-16 bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-gray-900 dark:to-gray-800"
+        className="pt-20 pb-16 bg-gradient-to-br from-gray-900 to-gray-800"
       >
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center py-20">
@@ -24,11 +24,10 @@ export default function Home() {
                 />
               </div>
             </div>
-            <h1 className="text-4xl md:text-6xl font-bold text-gray-900 dark:text-white mb-6">
-              Hi, I&apos;m{" "}
-              <span className="text-blue-600 dark:text-blue-400">Philip</span>
+            <h1 className="text-4xl md:text-6xl font-bold ext-white mb-6">
+              Hi, I&apos;m <span className="text-blue-400">Philip</span>
             </h1>
-            <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-8 max-w-3xl mx-auto">
+            <p className="text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto">
               Full Stack Developer passionate about creating beautiful and
               functional web experiences
             </p>

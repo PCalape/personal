@@ -3,17 +3,17 @@ import Footer from "../../components/Footer";
 
 export default function Contact() {
   return (
-    <div className="min-h-screen bg-white dark:bg-gray-900">
+    <div className="min-h-screen bg-gray-900">
       <Navigation />
 
       {/* Contact Section */}
-      <section className="pt-24 pb-16 bg-gray-50 dark:bg-gray-800">
+      <section className="pt-24 pb-16 bg-gray-800">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h1 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
+            <h1 className="text-3xl md:text-4xl font-bold text-white mb-4">
               Get In Touch
             </h1>
-            <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+            <p className="text-lg text-gray-300 max-w-2xl mx-auto">
               I&apos;m always interested in new opportunities and exciting
               projects. Let&apos;s connect!
             </p>
@@ -21,9 +21,9 @@ export default function Contact() {
           <div className="max-w-2xl mx-auto">
             <div className="grid md:grid-cols-2 gap-8 mb-8">
               <div className="text-center">
-                <div className="bg-blue-100 dark:bg-blue-900 w-12 h-12 rounded-lg flex items-center justify-center mx-auto mb-4">
+                <div className="bg-blue-900 w-12 h-12 rounded-lg flex items-center justify-center mx-auto mb-4">
                   <svg
-                    className="w-6 h-6 text-blue-600 dark:text-blue-400"
+                    className="w-6 h-6 text-blue-400"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -36,17 +36,13 @@ export default function Contact() {
                     />
                   </svg>
                 </div>
-                <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
-                  Email
-                </h3>
-                <p className="text-gray-600 dark:text-gray-300">
-                  your.email@example.com
-                </p>
+                <h3 className="text-lg font-semibold text-white mb-2">Email</h3>
+                <p className="text-gray-300">your.email@example.com</p>
               </div>
               <div className="text-center">
-                <div className="bg-blue-100 dark:bg-blue-900 w-12 h-12 rounded-lg flex items-center justify-center mx-auto mb-4">
+                <div className="bg-blue-900 w-12 h-12 rounded-lg flex items-center justify-center mx-auto mb-4">
                   <svg
-                    className="w-6 h-6 text-blue-600 dark:text-blue-400"
+                    className="w-6 h-6 text-blue-400"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -65,12 +61,10 @@ export default function Contact() {
                     />
                   </svg>
                 </div>
-                <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
+                <h3 className="text-lg font-semibold text-white mb-2">
                   Location
                 </h3>
-                <p className="text-gray-600 dark:text-gray-300">
-                  Your City, Country
-                </p>
+                <p className="text-gray-300">Your City, Country</p>
               </div>
             </div>
             <div className="flex justify-center gap-6">

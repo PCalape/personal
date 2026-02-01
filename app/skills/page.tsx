@@ -3,17 +3,17 @@ import Footer from "../../components/Footer";
 
 export default function Skills() {
   return (
-    <div className="min-h-screen bg-white dark:bg-gray-900">
+    <div className="min-h-screen bg-gray-900">
       <Navigation />
 
       {/* Skills Section */}
-      <section className="pt-24 pb-16 bg-white dark:bg-gray-900">
+      <section className="pt-24 pb-16 bg-gray-900">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h1 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
+            <h1 className="text-3xl md:text-4xl font-bold text-white mb-4">
               Skills & Technologies
             </h1>
-            <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+            <p className="text-lg text-gray-300 max-w-2xl mx-auto">
               I work with a variety of technologies to build modern, scalable
               applications.
             </p>
@@ -50,14 +50,14 @@ export default function Skills() {
               },
             ].map((category, index) => (
               <div key={index} className="text-center">
-                <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">
+                <h3 className="text-xl font-semibold text-white mb-4">
                   {category.category}
                 </h3>
                 <div className="space-y-2">
                   {category.skills.map((skill) => (
                     <div
                       key={skill}
-                      className="bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 px-3 py-2 rounded-lg"
+                      className="bg-gray-800 text-gray-300 px-3 py-2 rounded-lg"
                     >
                       {skill}
                     </div>

@@ -14,77 +14,74 @@ export default function About() {
               About Me
             </h1>
             <p className="text-base sm:text-lg text-gray-300 max-w-2xl mx-auto">
-              I&apos;m a passionate developer with a love for creating
-              innovative solutions and beautiful user experiences.
+              Senior Software Engineer specializing in backend development and
+              system architecture with a passion for building scalable
+              solutions.
             </p>
           </div>
           <div className="grid md:grid-cols-2 gap-8 sm:gap-12 items-center">
             <div className="space-y-4 sm:space-y-6">
               <p className="text-sm sm:text-base text-gray-300">
-                With several years of experience in web development, I
-                specialize in modern technologies like React, Next.js,
-                TypeScript, and Node.js. I enjoy solving complex problems and
-                turning ideas into reality through clean, efficient code.
+                With extensive experience in backend development, I specialize
+                in building robust server-side applications using Node.js,
+                NestJs, Next.js, Typescript, and modern cloud technologies. I
+                focus on creating scalable architectures, optimizing server
+                performance, and implementing secure APIs that power complex
+                applications.
               </p>
               <p className="text-sm sm:text-base text-gray-300">
-                When I&apos;m not coding, you can find me exploring new
-                technologies, contributing to open source projects, or enjoying
-                the great outdoors.
+                I&apos;m passionate about system design, microservices
+                architecture, and clean coding. When I&apos;m not coding, you
+                can find me researching emerging technologies, viewing tech
+                vlogs, or mentoring others.
               </p>
-              <div className="flex flex-wrap gap-2">
-                {[
-                  "JavaScript",
-                  "TypeScript",
-                  "React",
-                  "Next.js",
-                  "Node.js",
-                  "Python",
-                ].map((tech) => (
-                  <span
-                    key={tech}
-                    className="bg-gray-700 text-gray-300 px-3 py-1 rounded-full text-xs sm:text-sm"
-                  >
-                    {tech}
-                  </span>
-                ))}
-              </div>
             </div>
             <div className="bg-gray-800 rounded-lg p-6 sm:p-8 text-center order-first md:order-last">
               <h3 className="text-lg sm:text-xl font-semibold text-white mb-4">
                 Quick Stats
               </h3>
-              <div className="grid grid-cols-2 gap-3 sm:gap-4">
+              <div className="flex justify-center gap-8 sm:gap-12">
                 <div>
-                  <div className="text-xl sm:text-2xl font-bold text-blue-400">
-                    3+
+                  <div className="text-2xl sm:text-5xl font-bold text-blue-400">
+                    4+
                   </div>
                   <div className="text-xs sm:text-sm text-gray-300">
                     Years Experience
                   </div>
                 </div>
                 <div>
-                  <div className="text-xl sm:text-2xl font-bold text-blue-400">
-                    20+
-                  </div>
-                  <div className="text-xs sm:text-sm text-gray-300">
-                    Projects Completed
-                  </div>
-                </div>
-                <div>
-                  <div className="text-xl sm:text-2xl font-bold text-blue-400">
-                    10+
-                  </div>
-                  <div className="text-xs sm:text-sm text-gray-300">
-                    Technologies
-                  </div>
-                </div>
-                <div>
-                  <div className="text-xl sm:text-2xl font-bold text-blue-400">
+                  <div className="text-2xl sm:text-5xl font-bold text-blue-400">
                     100%
                   </div>
                   <div className="text-xs sm:text-sm text-gray-300">
                     Client Satisfaction
                   </div>
+                </div>
+              </div>
+
+              <div className="mt-6 sm:mt-8">
+                <h3 className="text-lg sm:text-xl font-semibold text-white mb-4">
+                  Main Stack
+                </h3>
+                <div className="flex flex-wrap gap-2 justify-center">
+                  {[
+                    "Node.js",
+                    "NestJs",
+                    "Next.js",
+                    "TypeScript",
+                    "PostgreSQL",
+                    "MongoDB",
+                    "AWS",
+                    "Docker",
+                    "Redis",
+                  ].map((tech) => (
+                    <span
+                      key={tech}
+                      className="bg-gray-700 text-gray-300 px-3 py-1 rounded-full text-xs sm:text-sm"
+                    >
+                      {tech}
+                    </span>
+                  ))}
                 </div>
               </div>
             </div>

@@ -13,9 +13,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Your Name - Portfolio",
+  title: "Philip John Calape - Portfolio",
   description:
-    "Full Stack Developer passionate about creating beautiful and functional web experiences",
+    "Senior Software Engineer passionate about building scalable systems and robust applications",
 };
 
 export default function RootLayout({

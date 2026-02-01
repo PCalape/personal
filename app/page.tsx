@@ -30,8 +30,8 @@ export default function Home() {
               Hi, I&apos;m <span className="text-blue-400">Philip</span>
             </h1>
             <p className="text-lg sm:text-xl md:text-2xl text-gray-300 mb-6 sm:mb-8 max-w-3xl mx-auto leading-relaxed px-4">
-              Full Stack Developer passionate about creating beautiful and
-              functional web experiences
+              Senior Software Engineer passionate about building scalable
+              systems and robust applications
             </p>
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center max-w-md sm:max-w-none mx-auto">
               <Link

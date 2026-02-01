@@ -14,8 +14,10 @@ export default function Projects() {
               Featured Projects
             </h1>
             <p className="text-base sm:text-lg text-gray-300 max-w-2xl mx-auto">
-              Here are some of my recent projects that showcase my skills and
-              experience.
+              Here are some of my featured projects that demonstrate my
+              full-stack development capabilities and backend expertise. While
+              some projects showcase frontend interfaces, they include robust
+              backend architectures and server-side solutions.
             </p>
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">

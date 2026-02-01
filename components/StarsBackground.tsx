@@ -109,6 +109,7 @@ export default function StarsBackground() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const animationRef = useRef<number | undefined>(undefined);
   const starsRef = useRef<Star[]>([]);
+  const lastFrameTimeRef = useRef<number>(0);
 
   useEffect(() => {
     const canvas = canvasRef.current;
@@ -116,6 +117,9 @@ export default function StarsBackground() {
 
     const context = canvas.getContext("2d");
     if (!context) return;
+
+    const FPS = 60;
+    const frameInterval = 1000 / FPS; // ~16.67ms for 60fps
 
     const resizeCanvas = () => {
       canvas.width = window.innerWidth;
@@ -156,20 +160,26 @@ export default function StarsBackground() {
       }
     };
 
-    const animate = () => {
-      context.clearRect(0, 0, canvas.width, canvas.height);
+    const animate = (currentTime: number) => {
+      const deltaTime = currentTime - lastFrameTimeRef.current;
 
-      starsRef.current.forEach((star) => {
-        star.update(canvas.width);
-        star.draw(context);
-      });
+      if (deltaTime >= frameInterval) {
+        context.clearRect(0, 0, canvas.width, canvas.height);
+
+        starsRef.current.forEach((star) => {
+          star.update(canvas.width);
+          star.draw(context);
+        });
+
+        lastFrameTimeRef.current = currentTime;
+      }
 
       animationRef.current = requestAnimationFrame(animate);
     };
 
     resizeCanvas();
     initializeStars();
-    animate();
+    animationRef.current = requestAnimationFrame(animate);
 
     const handleResize = () => {
       resizeCanvas();

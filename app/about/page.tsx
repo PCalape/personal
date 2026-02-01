@@ -14,9 +14,9 @@ export default function About() {
               About Me
             </h1>
             <p className="text-base sm:text-lg text-gray-300 max-w-2xl mx-auto">
-              Senior Software Engineer specializing in backend development and
-              system architecture with a passion for building scalable
-              solutions.
+              High agency Senior Software Engineer specializing in backend
+              development and system architecture with a passion for building
+              scalable solutions.
             </p>
           </div>
           <div className="grid md:grid-cols-2 gap-8 sm:gap-12 items-center">

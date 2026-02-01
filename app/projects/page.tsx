@@ -1,5 +1,6 @@
 import Navigation from "../../components/Navigation";
 import Footer from "../../components/Footer";
+import Image from "next/image";
 
 export default function Projects() {
   return (
@@ -14,42 +15,63 @@ export default function Projects() {
               Featured Projects
             </h1>
             <p className="text-base sm:text-lg text-gray-300 max-w-2xl mx-auto">
-              Here are some of my featured projects that demonstrate my
-              full-stack development capabilities and backend expertise. While
-              some projects showcase frontend interfaces, they include robust
-              backend architectures and server-side solutions.
+              Here are some of my featured personal projects that demonstrate my
+              full-stack development capabilities. While my projects showcase
+              frontend interfaces, they include robust backend architectures and
+              server-side solutions.
             </p>
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
             {[
               {
-                title: "E-commerce Platform",
+                title: "Wokane Expense Tracker",
                 description:
-                  "A full-stack e-commerce solution built with Next.js, Stripe, and MongoDB.",
-                tech: ["Next.js", "TypeScript", "Stripe", "MongoDB"],
-                image: "/api/placeholder/400/250",
+                  "AI powered expense tracker mobile app that helps you manage your finances effortlessly.",
+                tech: [
+                  "Flutter",
+                  "Dart",
+                  "NestJs",
+                  "TypeScript",
+                  "MongoDB",
+                  "OpenAI API",
+                ],
+                demoLink:
+                  "https://www.loom.com/share/dc15fcba0fa14e15bece65f9271336ab",
+                image: "/wokane.jpg",
+                imagePosition: "object-[center_17.5%]",
               },
               {
-                title: "Task Management App",
+                title: "PRREM Electrician Board Exam Reviewer",
                 description:
-                  "A collaborative task management application with real-time updates.",
-                tech: ["React", "Node.js", "Socket.io", "PostgreSQL"],
-                image: "/api/placeholder/400/250",
+                  "A web app that helps prepare for the electrician board exam with practice questions and progress tracking.",
+                tech: ["Next.js", "MongoDB", "TypeScript", "Tailwind CSS"],
+                image: "/prrem.jpg",
+                imagePosition: "object-center scale-110",
+                link: "https://prrem.vercel.app/",
               },
               {
                 title: "Portfolio Website",
                 description:
                   "A responsive portfolio website built with modern web technologies.",
                 tech: ["Next.js", "Tailwind CSS", "Framer Motion"],
-                image: "/api/placeholder/400/250",
               },
             ].map((project, index) => (
               <div
                 key={index}
                 className="bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow"
               >
-                <div className="h-36 sm:h-48 bg-gray-700 flex items-center justify-center">
-                  <span className="text-gray-400 text-sm">Project Image</span>
+                <div className="h-36 sm:h-48 bg-gray-700 flex items-center justify-center overflow-hidden">
+                  {project.image ? (
+                    <Image
+                      src={project.image}
+                      alt={project.title}
+                      width={400}
+                      height={250}
+                      className={`w-full h-full object-cover ${project.imagePosition || "object-center"}`}
+                    />
+                  ) : (
+                    <span className="text-gray-400 text-sm">Project Image</span>
+                  )}
                 </div>
                 <div className="p-4 sm:p-6">
                   <h3 className="text-lg sm:text-xl font-semibold text-white mb-2">
@@ -69,18 +91,25 @@ export default function Projects() {
                     ))}
                   </div>
                   <div className="flex gap-3 text-sm sm:text-base">
-                    <a
-                      href="#"
-                      className="text-blue-400 hover:underline font-medium"
-                    >
-                      Live Demo
-                    </a>
-                    <a
-                      href="#"
-                      className="text-gray-300 hover:underline font-medium"
-                    >
-                      Source Code
-                    </a>
+                    {project.demoLink ? (
+                      <a
+                        href={project.demoLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-blue-400 hover:underline font-medium"
+                      >
+                        Live Demo
+                      </a>
+                    ) : (
+                      <a
+                        href={project.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-blue-400 hover:underline font-medium"
+                      >
+                        Website
+                      </a>
+                    )}
                   </div>
                 </div>
               </div>

@@ -2,14 +2,16 @@ import Link from "next/link";
 import Image from "next/image";
 import Navigation from "../components/Navigation";
 import Footer from "../components/Footer";
+import StarsBackground from "../components/StarsBackground";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-gray-900">
+    <div className="min-h-screen bg-gray-900 relative">
+      <StarsBackground />
       <Navigation />
       <section
         id="home"
-        className="pt-20 pb-16 bg-gradient-to-br from-gray-900 to-gray-800"
+        className="pt-20 pb-16 bg-gradient-to-br from-gray-900/80 to-gray-800/80 relative z-10"
       >
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center py-20">

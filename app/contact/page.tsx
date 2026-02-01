@@ -7,7 +7,7 @@ export default function Contact() {
       <Navigation />
 
       {/* Contact Section */}
-      <section className="flex-1 pt-20 sm:pt-24 pb-8 sm:pb-16 bg-gray-800 flex items-center">
+      <section className="flex-1 pt-20 sm:pt-24 pb-8 sm:pb-16 bg-gray-900 flex items-center">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
           <div className="text-center mb-8 sm:mb-12">
             <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-4">

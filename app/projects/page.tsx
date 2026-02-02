@@ -50,10 +50,12 @@ export default function Projects() {
                 link: "https://prrem.vercel.app/",
               },
               {
-                title: "Portfolio Website",
+                title: "Space Impact",
                 description:
-                  "A responsive portfolio website built with modern web technologies.",
-                tech: ["Next.js", "Tailwind CSS", "Framer Motion"],
+                  "A 2D space shooter game where players navigate a spaceship, avoid obstacles, and defeat enemies to achieve high scores.",
+                tech: ["HTML", "Canvas"],
+                image: "/space-impact.png",
+                link: "https://space-impact-jet.vercel.app/",
               },
             ].map((project, index) => (
               <div

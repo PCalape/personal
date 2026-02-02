@@ -2,13 +2,16 @@
 
 import { useEffect, useRef } from "react";
 
+const FPS = 60;
+const frameInterval = 1000 / FPS; // ~16.67ms for 60fps
+
 interface Star {
   x: number;
   y: number;
   radius: number;
   color: string;
   speed: number;
-  update: (canvasWidth: number) => void;
+  update: (canvasWidth: number, deltaTime: number) => void;
   draw: (context: CanvasRenderingContext2D) => void;
 }
 
@@ -27,8 +30,8 @@ class NearStar implements Star {
     this.speed = 3;
   }
 
-  update(canvasWidth: number) {
-    this.x -= this.speed;
+  update(canvasWidth: number, deltaTime: number) {
+    this.x -= this.speed * (deltaTime / frameInterval);
     if (this.x < 0) {
       this.x = canvasWidth;
     }
@@ -58,8 +61,8 @@ class MidStar implements Star {
     this.speed = 2;
   }
 
-  update(canvasWidth: number) {
-    this.x -= this.speed;
+  update(canvasWidth: number, deltaTime: number) {
+    this.x -= this.speed * (deltaTime / frameInterval);
     if (this.x < 0) {
       this.x = canvasWidth;
     }
@@ -89,8 +92,8 @@ class FarStar implements Star {
     this.speed = 1;
   }
 
-  update(canvasWidth: number) {
-    this.x -= this.speed;
+  update(canvasWidth: number, deltaTime: number) {
+    this.x -= this.speed * (deltaTime / frameInterval);
     if (this.x < 0) {
       this.x = canvasWidth;
     }
@@ -117,9 +120,6 @@ export default function StarsBackground() {
 
     const context = canvas.getContext("2d");
     if (!context) return;
-
-    const FPS = 60;
-    const frameInterval = 1000 / FPS; // ~16.67ms for 60fps
 
     const resizeCanvas = () => {
       canvas.width = window.innerWidth;
@@ -162,17 +162,14 @@ export default function StarsBackground() {
 
     const animate = (currentTime: number) => {
       const deltaTime = currentTime - lastFrameTimeRef.current;
+      lastFrameTimeRef.current = currentTime;
 
-      if (deltaTime >= frameInterval) {
-        context.clearRect(0, 0, canvas.width, canvas.height);
+      context.clearRect(0, 0, canvas.width, canvas.height);
 
-        starsRef.current.forEach((star) => {
-          star.update(canvas.width);
-          star.draw(context);
-        });
-
-        lastFrameTimeRef.current = currentTime;
-      }
+      starsRef.current.forEach((star) => {
+        star.update(canvas.width, deltaTime);
+        star.draw(context);
+      });
 
       animationRef.current = requestAnimationFrame(animate);
     };

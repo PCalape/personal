@@ -161,7 +161,7 @@ export default function StarsBackground() {
     };
 
     const animate = (currentTime: number) => {
-      const deltaTime = currentTime - lastFrameTimeRef.current;
+      const deltaTime = Math.min(currentTime - lastFrameTimeRef.current, frameInterval * 2);
       lastFrameTimeRef.current = currentTime;
 
       context.clearRect(0, 0, canvas.width, canvas.height);

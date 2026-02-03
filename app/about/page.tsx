@@ -1,9 +1,11 @@
 import Navigation from "../../components/Navigation";
 import Footer from "../../components/Footer";
+import CircularStarsBackground from "../../components/CircularStarsBackground";
 
 export default function About() {
   return (
-    <div className="min-h-screen bg-gray-900 flex flex-col">
+    <div className="min-h-screen bg-gray-900 flex flex-col relative">
+      <CircularStarsBackground />
       <Navigation />
 
       {/* About Section */}

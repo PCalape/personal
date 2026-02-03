@@ -57,6 +57,40 @@ export default function Projects() {
                 image: "/space-impact.png",
                 link: "https://space-impact-jet.vercel.app/",
               },
+              {
+                title: "Wokane Expense Tracker",
+                description:
+                  "AI powered expense tracker mobile app that helps you manage your finances effortlessly.",
+                tech: [
+                  "Flutter",
+                  "Dart",
+                  "NestJs",
+                  "TypeScript",
+                  "MongoDB",
+                  "OpenAI API",
+                ],
+                demoLink:
+                  "https://www.loom.com/share/dc15fcba0fa14e15bece65f9271336ab",
+                image: "/wokane.jpg",
+                imagePosition: "object-[center_17.5%]",
+              },
+              {
+                title: "PRREM Electrician Board Exam Reviewer",
+                description:
+                  "A web app that helps prepare for the electrician board exam with practice questions and progress tracking.",
+                tech: ["Next.js", "MongoDB", "TypeScript", "Tailwind CSS"],
+                image: "/prrem.jpg",
+                imagePosition: "object-center scale-110",
+                link: "https://prrem.vercel.app/",
+              },
+              {
+                title: "Space Impact",
+                description:
+                  "A 2D space shooter game where players navigate a spaceship, avoid obstacles, and defeat enemies to achieve high scores.",
+                tech: ["HTML", "Canvas"],
+                image: "/space-impact.png",
+                link: "https://space-impact-jet.vercel.app/",
+              },
             ].map((project, index) => (
               <div
                 key={index}

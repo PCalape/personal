@@ -1,10 +1,12 @@
 import Navigation from "../../components/Navigation";
 import Footer from "../../components/Footer";
 import Image from "next/image";
+import ShootingStarsBackground from "../../components/ShootingStarsBackground";
 
 export default function Projects() {
   return (
-    <div className="min-h-screen bg-gray-900 flex flex-col">
+    <div className="min-h-screen bg-gray-900 flex flex-col relative">
+      <ShootingStarsBackground />
       <Navigation />
 
       {/* Projects Section */}
@@ -94,7 +96,7 @@ export default function Projects() {
             ].map((project, index) => (
               <div
                 key={index}
-                className="bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow"
+                className="bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow relative z-10"
               >
                 <div className="h-36 sm:h-48 bg-gray-700 flex items-center justify-center overflow-hidden">
                   {project.image ? (

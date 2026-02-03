@@ -1,9 +1,11 @@
 import Navigation from "../../components/Navigation";
 import Footer from "../../components/Footer";
+import RadialStarsBackground from "../../components/RadialStarsBackground";
 
 export default function Contact() {
   return (
-    <div className="min-h-screen bg-gray-900 flex flex-col">
+    <div className="min-h-screen bg-gray-900 flex flex-col relative">
+      <RadialStarsBackground />
       <Navigation />
 
       {/* Contact Section */}

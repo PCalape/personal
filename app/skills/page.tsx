@@ -1,9 +1,11 @@
 import Navigation from "../../components/Navigation";
 import Footer from "../../components/Footer";
+import TwinklingStarsBackground from "../../components/TwinklingStarsBackground";
 
 export default function Skills() {
   return (
-    <div className="min-h-screen bg-gray-900 flex flex-col">
+    <div className="min-h-screen bg-gray-900 flex flex-col relative">
+      <TwinklingStarsBackground />
       <Navigation />
 
       {/* Skills Section */}
@@ -49,7 +51,7 @@ export default function Skills() {
                 skills: ["REST APIs", "GraphQL", "Testing", "CI/CD", "Agile"],
               },
             ].map((category, index) => (
-              <div key={index} className="text-center">
+              <div key={index} className="text-center relative z-10">
                 <h3 className="text-lg sm:text-xl font-semibold text-white mb-3 sm:mb-4">
                   {category.category}
                 </h3>

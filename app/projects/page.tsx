@@ -60,21 +60,19 @@ export default function Projects() {
                 link: "https://space-impact-jet.vercel.app/",
               },
               {
-                title: "Wokane Expense Tracker",
+                title: "Online Gambling Machine",
                 description:
-                  "AI powered expense tracker mobile app that helps you manage your finances effortlessly.",
+                  "A web-based gambling machine game that simulates slot machine gameplay with interactive features and animations.",
                 tech: [
-                  "Flutter",
-                  "Dart",
-                  "NestJs",
                   "TypeScript",
+                  "Next.js",
+                  "Tailwind CSS",
+                  "Framer Motion",
                   "MongoDB",
                   "OpenAI API",
                 ],
-                demoLink:
-                  "https://www.loom.com/share/dc15fcba0fa14e15bece65f9271336ab",
-                image: "/wokane.jpg",
-                imagePosition: "object-[center_17.5%]",
+                image: "/slot.png",
+                link: "https://online-gambling-ten.vercel.app/",
               },
               {
                 title: "PRREM Electrician Board Exam Reviewer",

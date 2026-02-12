@@ -79,8 +79,7 @@ export default function Projects() {
                 description:
                   "A web app that allows users to run Python code snippets in a secure environment.",
                 tech: ["Next.js", "Python", "TypeScript", "Tailwind CSS", "Vercel Functions"],
-                image: "/snake.png",
-                imagePosition: "object-center scale-110",
+                image: "/snake.jpg",
                 link: "https://python-runner-beta.vercel.app/",
               },
             ].map((project, index) => (

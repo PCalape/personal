@@ -75,21 +75,13 @@ export default function Projects() {
                 link: "https://online-gambling-ten.vercel.app/",
               },
               {
-                title: "PRREM Electrician Board Exam Reviewer",
+                title: "Python Code Runner",
                 description:
-                  "A web app that helps prepare for the electrician board exam with practice questions and progress tracking.",
-                tech: ["Next.js", "MongoDB", "TypeScript", "Tailwind CSS"],
-                image: "/prrem.jpg",
+                  "A web app that allows users to run Python code snippets in a secure environment.",
+                tech: ["Next.js", "Python", "TypeScript", "Tailwind CSS", "Vercel Functions"],
+                image: "/snake.jpg",
                 imagePosition: "object-center scale-110",
-                link: "https://prrem.vercel.app/",
-              },
-              {
-                title: "Space Impact",
-                description:
-                  "A 2D space shooter game where players navigate a spaceship, avoid obstacles, and defeat enemies to achieve high scores.",
-                tech: ["HTML", "Canvas"],
-                image: "/space-impact.png",
-                link: "https://space-impact-jet.vercel.app/",
+                link: "https://python-runner-beta.vercel.app/",
               },
             ].map((project, index) => (
               <div

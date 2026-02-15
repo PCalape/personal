@@ -24,31 +24,33 @@ export default function Skills() {
             {[
               {
                 category: "Frontend",
-                skills: [
-                  "React",
-                  "Next.js",
-                  "TypeScript",
-                  "Tailwind CSS",
-                  "Vue.js",
-                ],
+                skills: ["React", "Next.js", "TypeScript", "Tailwind CSS"],
               },
               {
                 category: "Backend",
                 skills: [
                   "Node.js",
                   "Express",
-                  "Python",
+                  "NestJs",
+                  "TypeScript",
                   "PostgreSQL",
                   "MongoDB",
+                  "Redis",
                 ],
               },
               {
                 category: "Tools & Services",
-                skills: ["Git", "Docker", "AWS", "Vercel", "Figma"],
+                skills: ["Git", "Docker", "AWS"],
               },
               {
                 category: "Other",
-                skills: ["REST APIs", "GraphQL", "Testing", "CI/CD", "Agile"],
+                skills: [
+                  "REST APIs",
+                  "GraphQL",
+                  "Testing",
+                  "Microservices",
+                  "Agile",
+                ],
               },
             ].map((category, index) => (
               <div key={index} className="text-center relative z-10">

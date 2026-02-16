@@ -60,6 +60,13 @@ export default function Navigation() {
             <Link href="/contact" className={getLinkClassName("/contact")}>
               Contact
             </Link>
+            <a
+              href="/resume.pdf"
+              download="Philip_John_Calape_Resume.pdf"
+              className="px-3 py-2 rounded-md transition-colors bg-blue-600 hover:bg-blue-700 text-white font-medium"
+            >
+              Download Resume
+            </a>
           </div>
 
           {/* Mobile menu button */}
@@ -149,6 +156,14 @@ export default function Navigation() {
             >
               Contact
             </Link>
+            <a
+              href="/resume.pdf"
+              download="Philip_John_Calape_Resume.pdf"
+              className="block px-3 py-2 text-base font-medium transition-colors border-l-4 bg-blue-600 hover:bg-blue-700 text-white border-blue-400"
+              onClick={closeMenu}
+            >
+              Download Resume
+            </a>
           </div>
         </div>
       </div>

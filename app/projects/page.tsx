@@ -1,4 +1,3 @@
-import Navigation from "../../components/Navigation";
 import Footer from "../../components/Footer";
 import Image from "next/image";
 import ShootingStarsBackground from "../../components/ShootingStarsBackground";
@@ -7,7 +6,6 @@ export default function Projects() {
   return (
     <div className="min-h-screen bg-gray-900 flex flex-col relative">
       <ShootingStarsBackground />
-      <Navigation />
 
       {/* Projects Section */}
       <section className="flex-1 pt-20 sm:pt-24 pb-8 sm:pb-16 bg-gray-900">

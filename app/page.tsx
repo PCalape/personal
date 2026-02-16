@@ -1,6 +1,5 @@
 import Link from "next/link";
 import Image from "next/image";
-import Navigation from "../components/Navigation";
 import Footer from "../components/Footer";
 import StarsBackground from "../components/StarsBackground";
 
@@ -8,7 +7,6 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-gray-900 relative flex flex-col">
       <StarsBackground />
-      <Navigation />
       <section
         id="home"
         className="flex-1 flex items-center justify-center pt-20 pb-8 sm:pb-16 bg-gradient-to-br from-gray-900/80 to-gray-800/80 relative z-10 min-h-[calc(100vh-5rem)]"
